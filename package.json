@@ -1,0 +1,27 @@
+{
+  "name": "wings-writable",
+  "version": "1.0.0",
+  "main": "dist/lib/es6/index.js",
+  "types": "dist/lib/es6/index.d.ts",
+  "files": [
+    "dist/lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WingsDevelopment/js-lib-publish-test"
+  },
+  "author": "Wings Development",
+  "license": "MIT",
+  "scripts": {
+    "compile": "rd /s /q dist\\lib && tsc && tsc --build tsconfig.es5.json",
+    "build:": "npx tsc",
+    "up": "npm version patch -f",
+    "pub": "yarn up && npm publish"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}

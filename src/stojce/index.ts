@@ -1,0 +1,1 @@
+export { initializeWritable } from "./stojce";

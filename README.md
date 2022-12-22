@@ -1,1 +1,1 @@
-# wings-writable
+# js-lib-publish-test
